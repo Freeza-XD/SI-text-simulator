@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Self Insert Simulation</title>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
@@ -15,35 +15,35 @@
         <div class="stat">
             <span class="stat-name">Honor:</span>
             <div class="stat-bar">
-                <div class="stat-fill" style="width: {{ stats.honor }}%; background-color: #FFD700;"></div>
+                <div class="stat-fill" style="width: {{ stats.honor }}%;"></div>
             </div>
             <span class="stat-value">{{ stats.honor }}</span>
         </div>
         <div class="stat">
             <span class="stat-name">Strength:</span>
             <div class="stat-bar">
-                <div class="stat-fill" style="width: {{ stats.strength }}%; background-color: #FF6B6B;"></div>
+                <div class="stat-fill" style="width: {{ stats.strength }}%;"></div>
             </div>
             <span class="stat-value">{{ stats.strength }}</span>
         </div>
         <div class="stat">
             <span class="stat-name">Intellect:</span>
             <div class="stat-bar">
-                <div class="stat-fill" style="width: {{ stats.intellect }}%; background-color: #4ECDC4;"></div>
+                <div class="stat-fill" style="width: {{ stats.intellect }}%;"></div>
             </div>
             <span class="stat-value">{{ stats.intellect }}</span>
         </div>
         <div class="stat">
             <span class="stat-name">Compassion:</span>
             <div class="stat-bar">
-                <div class="stat-fill" style="width: {{ stats.compassion }}%; background-color: #FF69B4;"></div>
+                <div class="stat-fill" style="width: {{ stats.compassion }}%;"></div>
             </div>
             <span class="stat-value">{{ stats.compassion }}</span>
         </div>
         <div class="stat">
             <span class="stat-name">Ambition:</span>
             <div class="stat-bar">
-                <div class="stat-fill" style="width: {{ stats.ambition }}%; background-color: #9D4EDD;"></div>
+                <div class="stat-fill" style="width: {{ stats.ambition }}%;"></div>
             </div>
             <span class="stat-value">{{ stats.ambition }}</span>
         </div>
@@ -72,7 +72,7 @@
         {% endfor %}
     </form>
 
-    <a href="/reset" class="reset-button">Reset Game</a>
+    <a href="{{ url_for('reset_game') }}" class="reset-button">Reset Game</a>
 </div>
 
 </body>

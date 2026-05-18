@@ -1,11 +1,16 @@
-from flask import Flask, render_template, request, session, redirect, url_for
 import json
+from pathlib import Path
+
+from flask import Flask, render_template, request, session, redirect, url_for
 
 app = Flask(__name__)
 app.secret_key = 'your-secret-key-change-this'
 
 # Load story
-with open('Stories/tobirama.json', 'r') as f:
+BASE_DIR = Path(__file__).resolve().parent
+STORY_PATH = BASE_DIR / 'stories' / 'tobirama.json'
+
+with STORY_PATH.open(encoding='utf-8') as f:
     STORY = json.load(f)
 
 # Default player stats

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Self Insert Simulation</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Tobirama's Choices</h1>
+
+    <!-- Stats Panel -->
+    <div class="stats-panel">
+        <h3>Player Stats</h3>
+        <div class="stat">
+            <span class="stat-name">Honor:</span>
+            <div class="stat-bar">
+                <div class="stat-fill" style="width: {{ stats.honor }}%; background-color: #FFD700;"></div>
+            </div>
+            <span class="stat-value">{{ stats.honor }}</span>
+        </div>
+        <div class="stat">
+            <span class="stat-name">Strength:</span>
+            <div class="stat-bar">
+                <div class="stat-fill" style="width: {{ stats.strength }}%; background-color: #FF6B6B;"></div>
+            </div>
+            <span class="stat-value">{{ stats.strength }}</span>
+        </div>
+        <div class="stat">
+            <span class="stat-name">Intellect:</span>
+            <div class="stat-bar">
+                <div class="stat-fill" style="width: {{ stats.intellect }}%; background-color: #4ECDC4;"></div>
+            </div>
+            <span class="stat-value">{{ stats.intellect }}</span>
+        </div>
+        <div class="stat">
+            <span class="stat-name">Compassion:</span>
+            <div class="stat-bar">
+                <div class="stat-fill" style="width: {{ stats.compassion }}%; background-color: #FF69B4;"></div>
+            </div>
+            <span class="stat-value">{{ stats.compassion }}</span>
+        </div>
+        <div class="stat">
+            <span class="stat-name">Ambition:</span>
+            <div class="stat-bar">
+                <div class="stat-fill" style="width: {{ stats.ambition }}%; background-color: #9D4EDD;"></div>
+            </div>
+            <span class="stat-value">{{ stats.ambition }}</span>
+        </div>
+    </div>
+
+    <div class="story-box">
+        <p>{{ scene.text }}</p>
+    </div>
+
+    <form method="POST">
+        {% for choice in choices %}
+            <div class="choice-item">
+                <button type="submit" name="choice" value="{{ loop.index0 }}" class="choice-button">
+                    {{ choice.text }}
+                </button>
+                {% if choice.effects %}
+                    <div class="choice-effects">
+                        {% for stat, value in choice.effects.items() %}
+                            <span class="effect" title="Affects {{ stat }}">
+                                {{ stat }}: {% if value > 0 %}+{% endif %}{{ value }}
+                            </span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </form>
+
+    <a href="/reset" class="reset-button">Reset Game</a>
+</div>
+
+</body>
+</html>

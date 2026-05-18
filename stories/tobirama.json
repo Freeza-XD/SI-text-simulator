@@ -1,0 +1,409 @@
+{
+  "intro": {
+    "text": "The battlefield burns under the evening sky. Izuna Uchiha collapses before you, blood spreading across the dirt from the wound your blade inflicted. In the distance, the clash between Hashirama and Madara continues. For a brief moment, the war itself seems to pause.\n\nIzuna struggles to breathe as his Sharingan slowly fades in and out of focus.\n\nWhat will Tobirama Senju do?",
+    "choices": [
+      {
+        "text": "Finish Izuna immediately",
+        "next_scene": "kill_izuna",
+        "effects": {
+          "ambition": 20,
+          "compassion": -20,
+          "strength": 10
+        }
+      },
+      {
+        "text": "Spare Izuna and walk away",
+        "next_scene": "spare_izuna",
+        "effects": {
+          "compassion": 20,
+          "ambition": -10,
+          "honor": 10
+        }
+      },
+      {
+        "text": "Attempt to save Izuna",
+        "next_scene": "save_izuna",
+        "effects": {
+          "compassion": 30,
+          "ambition": -20,
+          "intellect": 20,
+          "strength": -10
+        }
+      },
+      {
+        "text": "Capture Izuna as a hostage",
+        "next_scene": "capture_izuna",
+        "effects": {
+          "intellect": 15,
+          "ambition": 15,
+          "compassion": -10
+        }
+      },
+      {
+        "text": "Show mercy and risk everything (Requires honor > 70)",
+        "next_scene": "ultimate_mercy",
+        "condition": "honor > 70",
+        "effects": {
+          "compassion": 40,
+          "honor": 20,
+          "strength": -15
+        }
+      }
+    ]
+  },
+
+  "kill_izuna": {
+    "text": "You drive your blade through Izuna's chest without hesitation.\n\nHis breathing stops.\n\nFor several seconds, the battlefield becomes unnaturally silent.\n\nFar away, Madara senses his brother's death.\n\nThe hatred in the air becomes suffocating.",
+    "choices": [
+      {
+        "text": "Face Madara directly",
+        "next_scene": "madara_rage",
+        "effects": {
+          "strength": 15,
+          "honor": -10
+        }
+      },
+      {
+        "text": "Return to Hashirama",
+        "next_scene": "hashirama_confrontation",
+        "effects": {
+          "intellect": 10
+        }
+      }
+    ]
+  },
+
+  "spare_izuna": {
+    "text": "You lower your weapon.\n\nIzuna stares at you in disbelief.\n\n'Why...?' he whispers.\n\nThe war has taught both clans to expect cruelty, not mercy.",
+    "choices": [
+      {
+        "text": "Tell him the cycle of hatred must end",
+        "next_scene": "peace_attempt",
+        "effects": {
+          "compassion": 15,
+          "intellect": 10
+        }
+      },
+      {
+        "text": "Warn him never to face you again",
+        "next_scene": "cold_mercy",
+        "effects": {
+          "strength": 10
+        }
+      },
+      {
+        "text": "Ask about his reasons for fighting (Requires intellect > 60)",
+        "next_scene": "understanding",
+        "condition": "intellect > 60",
+        "effects": {
+          "intellect": 15,
+          "compassion": 10
+        }
+      }
+    ]
+  },
+
+  "save_izuna": {
+    "text": "Against all logic, you kneel beside Izuna and begin emergency treatment.\n\nYour medical ninjutsu slows the bleeding.\n\nSeveral nearby Senju stare at you in complete shock.",
+    "choices": [
+      {
+        "text": "Take Izuna back for treatment",
+        "next_scene": "senju_conflict",
+        "effects": {
+          "compassion": 10,
+          "ambition": -5
+        }
+      },
+      {
+        "text": "Secretly send him back to the Uchiha",
+        "next_scene": "hidden_deal",
+        "effects": {
+          "intellect": 15,
+          "ambition": 10
+        }
+      },
+      {
+        "text": "Let him decide his own fate (Requires compassion > 75)",
+        "next_scene": "free_choice",
+        "condition": "compassion > 75",
+        "effects": {
+          "compassion": 15,
+          "honor": 15
+        }
+      }
+    ]
+  },
+
+  "capture_izuna": {
+    "text": "You restrain Izuna before he loses consciousness.\n\nA living Uchiha heir could force negotiations.\n\nOr ignite an even larger war.",
+    "choices": [
+      {
+        "text": "Use him to negotiate peace",
+        "next_scene": "negotiation",
+        "effects": {
+          "intellect": 20,
+          "honor": 10
+        }
+      },
+      {
+        "text": "Interrogate him for Uchiha secrets",
+        "next_scene": "interrogation",
+        "effects": {
+          "intellect": 15,
+          "ambition": 10,
+          "compassion": -15
+        }
+      },
+      {
+        "text": "Release him if he swears a peace oath (Requires honor > 65)",
+        "next_scene": "oath_binding",
+        "condition": "honor > 65",
+        "effects": {
+          "honor": 20,
+          "intellect": 10
+        }
+      }
+    ]
+  },
+
+  "madara_rage": {
+    "text": "Madara arrives moments later.\n\nThe moment he sees Izuna's lifeless body, his expression changes completely.\n\nThe battlefield trembles under the pressure of his chakra.\n\n'Tobirama...'\n\nHis Mangekyo Sharingan locks onto you.",
+    "choices": [
+      {
+        "text": "Prepare to fight",
+        "next_scene": "ending_war",
+        "effects": {
+          "strength": 20
+        }
+      },
+      {
+        "text": "Apologize and face his judgment (Requires honor > 60)",
+        "next_scene": "ending_redemption",
+        "condition": "honor > 60",
+        "effects": {
+          "honor": -30
+        }
+      }
+    ]
+  },
+
+  "hashirama_confrontation": {
+    "text": "Hashirama finds you standing over Izuna's body.\n\nHis face is filled not with anger, but exhaustion.\n\n'This war will never end like this, brother.'",
+    "choices": [
+      {
+        "text": "Defend your actions",
+        "next_scene": "ending_duty",
+        "effects": {
+          "ambition": 10
+        }
+      },
+      {
+        "text": "Remain silent",
+        "next_scene": "ending_silence",
+        "effects": {
+          "intellect": 5
+        }
+      },
+      {
+        "text": "Confess your doubt (Requires compassion > 55)",
+        "next_scene": "ending_doubt",
+        "condition": "compassion > 55",
+        "effects": {
+          "honor": 15
+        }
+      }
+    ]
+  },
+
+  "peace_attempt": {
+    "text": "Izuna listens silently.\n\nFor the first time in years, an Uchiha and a Senju speak without immediately reaching for a weapon.\n\nSomewhere in the distance, the future itself shifts.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next_scene": "ending_peace",
+        "effects": {
+          "honor": 15
+        }
+      }
+    ]
+  },
+
+  "cold_mercy": {
+    "text": "You leave Izuna alive, but your warning carries no warmth.\n\nEven so, the fact remains:\n\nTobirama Senju spared an Uchiha.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next_scene": "ending_uncertain",
+        "effects": {
+          "strength": 5
+        }
+      }
+    ]
+  },
+
+  "understanding": {
+    "text": "Izuna speaks of his brother, his clan, the weight of being born an Uchiha.\n\nYou realize, for perhaps the first time, that you are not so different.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next_scene": "ending_understanding",
+        "effects": {
+          "compassion": 20
+        }
+      }
+    ]
+  },
+
+  "ultimate_mercy": {
+    "text": "Despite every instinct screaming otherwise, you sheathe your sword.\n\nYou kneel beside Izuna and save him, knowing full well the consequences.\n\nThe moment feels eternal.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next_scene": "ending_ultimate_mercy",
+        "effects": {
+          "honor": 30
+        }
+      }
+    ]
+  },
+
+  "senju_conflict": {
+    "text": "The Senju clan erupts into argument after seeing you save Izuna.\n\nSome call you naive.\n\nOthers wonder if peace was always possible.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next_scene": "ending_divided",
+        "effects": {
+          "ambition": -10
+        }
+      }
+    ]
+  },
+
+  "hidden_deal": {
+    "text": "Under the cover of darkness, Izuna is secretly returned to the Uchiha.\n\nOnly you and Izuna know the truth.\n\nFor now.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next_scene": "ending_secret",
+        "effects": {
+          "intellect": 10,
+          "ambition": 5
+        }
+      }
+    ]
+  },
+
+  "free_choice": {
+    "text": "You help Izuna to his feet and tell him:\n\n'Your fate should be yours to choose, not mine to decide.'\n\nHe stares at you in disbelief, then slowly walks away into the night.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next_scene": "ending_free_will",
+        "effects": {
+          "honor": 25
+        }
+      }
+    ]
+  },
+
+  "negotiation": {
+    "text": "Using Izuna as leverage, you force the first serious negotiations between the Senju and Uchiha clans.\n\nThe tension is unbearable.\n\nBut for the first time, peace becomes imaginable.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next_scene": "ending_negotiation",
+        "effects": {
+          "intellect": 10,
+          "ambition": 5
+        }
+      }
+    ]
+  },
+
+  "interrogation": {
+    "text": "Izuna refuses to betray his clan despite his condition.\n\nHis loyalty only deepens your distrust of the Uchiha.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next_scene": "ending_paranoia",
+        "effects": {
+          "intellect": -5
+        }
+      }
+    ]
+  },
+
+  "oath_binding": {
+    "text": "Izuna swears a binding oath of peace on his honor and clan name.\n\nYou release him.\n\nBoth of you know this changes everything.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next_scene": "ending_oath",
+        "effects": {
+          "honor": 20
+        }
+      }
+    ]
+  },
+
+  "ending_war": {
+    "text": "Ending: Flames of Hatred\n\nYour strength allows you to face Madara, but the conflict consumes both of you. The war continues, fueled by your actions."
+  },
+
+  "ending_redemption": {
+    "text": "Ending: A Price for Peace\n\nBy accepting Madara's judgment, you plant the seeds of future peace—but at great personal cost."
+  },
+
+  "ending_duty": {
+    "text": "Ending: Necessary Evil\n\nYou convince yourself that harsh decisions are required to protect the Senju. History will debate your wisdom."
+  },
+
+  "ending_silence": {
+    "text": "Ending: Silent Regret\n\nHashirama says nothing more, but the distance between brothers quietly grows with each passing year."
+  },
+
+  "ending_doubt": {
+    "text": "Ending: The Uncertainty of War\n\nYour confession changes how Hashirama sees you—not as a warrior, but as a man burdened by choices."
+  },
+
+  "ending_peace": {
+    "text": "Ending: A Different Future\n\nPerhaps the cycle of hatred could have ended here, with two men speaking instead of fighting."
+  },
+
+  "ending_understanding": {
+    "text": "Ending: Bridges Built\n\nYour conversation with Izuna becomes the foundation for something neither clan expected: mutual understanding."
+  },
+
+  "ending_ultimate_mercy": {
+    "text": "Ending: The Sacrifice\n\nYour unprecedented act of mercy reshapes how both clans view honor and strength. Your name becomes legend."
+  },
+
+  "ending_uncertain": {
+    "text": "Ending: Unsteady Mercy\n\nOne spared life creates ripples no one can yet predict. Years from now, they may call you wise or naive."
+  },
+
+  "ending_divided": {
+    "text": "Ending: Fractured Loyalties\n\nYour decision changes how the Senju view both you and the Uchiha. Some see mercy. Others see betrayal."
+  },
+
+  "ending_secret": {
+    "text": "Ending: Hidden Accord\n\nA secret between enemies may one day reshape the world. Izuna remembers your mercy when power was yours."
+  },
+
+  "ending_free_will": {
+    "text": "Ending: Freedom's Gift\n\nBy choosing Izuna's freedom, you proved that strength is not just in dominance, but in choosing restraint."
+  },
+
+  "ending_negotiation": {
+    "text": "Ending: The First Treaty\n\nPeace begins not with trust, but necessity. Yet necessity often leads to understanding."
+  },
+
+  "ending_oath": {
+    "text": "Ending: Sworn Bond\n\nAn oath between former enemies becomes the cornerstone of a new era. Your faith is vindicated."
+  },
+
+  "ending_paranoia": {
+    "text": "Ending: Seeds of Distrust\n\nYour suspicion toward the Uchiha deepens into something darker, shaping your policies for decades to come."
+  }
+}

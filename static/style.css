@@ -1,0 +1,150 @@
+body {
+    background-color: #111;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: white;
+    margin-top: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.stats-panel {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 15px;
+}
+
+.stat-name {
+    width: 90px;
+    font-size: 13px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-bar {
+    flex: 1;
+    height: 16px;
+    background-color: #222;
+    border: 1px solid #333;
+    overflow: hidden;
+}
+
+.stat-fill {
+    height: 100%;
+    background-color: #555;
+    transition: width 0.4s ease;
+}
+
+.stat-value {
+    width: 35px;
+    text-align: right;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.story-box {
+    background-color: #1a1a1a;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+    border-left: 3px solid #555;
+    line-height: 1.8;
+    font-size: 15px;
+    color: #ddd;
+}
+
+.choice-item {
+    margin-bottom: 12px;
+}
+
+.choice-button {
+    width: 100%;
+    background-color: #222;
+    color: #ddd;
+    border: 1px solid #333;
+    padding: 14px 16px;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    text-align: left;
+    font-family: inherit;
+}
+
+.choice-button:hover {
+    background-color: #2a2a2a;
+    border-color: #555;
+}
+
+.choice-button:active {
+    background-color: #333;
+}
+
+.choice-effects {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+    margin-left: 16px;
+    flex-wrap: wrap;
+}
+
+.effect {
+    font-size: 11px;
+    padding: 4px 8px;
+    background-color: #222;
+    border: 1px solid #333;
+    color: #999;
+    border-radius: 0;
+    cursor: help;
+}
+
+.reset-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #ddd;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 0;
+    transition: all 0.2s ease;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background-color: #2a2a2a;
+    border-color: #555;
+}
+
+form {
+    margin-top: 20px;
+}

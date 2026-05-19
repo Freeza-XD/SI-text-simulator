@@ -42,7 +42,11 @@
       {
         "text": "Show mercy and risk everything (Requires honor > 70)",
         "next_scene": "ultimate_mercy",
-        "condition": "honor > 70",
+        "condition": {
+          "stat": "honor",
+          "operator": ">",
+          "value": 70
+        },
         "effects": {
           "compassion": 40,
           "honor": 20,
@@ -94,7 +98,11 @@
       {
         "text": "Ask about his reasons for fighting (Requires intellect > 60)",
         "next_scene": "understanding",
-        "condition": "intellect > 60",
+        "condition": {
+          "stat": "intellect",
+          "operator": ">",
+          "value": 60
+        },
         "effects": {
           "intellect": 15,
           "compassion": 10
@@ -125,7 +133,11 @@
       {
         "text": "Let him decide his own fate (Requires compassion > 75)",
         "next_scene": "free_choice",
-        "condition": "compassion > 75",
+        "condition": {
+          "stat": "compassion",
+          "operator": ">",
+          "value": 75
+        },
         "effects": {
           "compassion": 15,
           "honor": 15
@@ -157,7 +169,11 @@
       {
         "text": "Release him if he swears a peace oath (Requires honor > 65)",
         "next_scene": "oath_binding",
-        "condition": "honor > 65",
+        "condition": {
+          "stat": "honor",
+          "operator": ">",
+          "value": 65
+        },
         "effects": {
           "honor": 20,
           "intellect": 10
@@ -179,7 +195,11 @@
       {
         "text": "Apologize and face his judgment (Requires honor > 60)",
         "next_scene": "ending_redemption",
-        "condition": "honor > 60",
+        "condition": {
+          "stat": "honor",
+          "operator": ">",
+          "value": 60
+        },
         "effects": {
           "honor": -30
         }
@@ -207,7 +227,11 @@
       {
         "text": "Confess your doubt (Requires compassion > 55)",
         "next_scene": "ending_doubt",
-        "condition": "compassion > 55",
+        "condition": {
+          "stat": "compassion",
+          "operator": ">",
+          "value": 55
+        },
         "effects": {
           "honor": 15
         }

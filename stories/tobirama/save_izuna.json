@@ -9,10 +9,10 @@
           "izuna_saved"
         ]
       },
-      "effects": {
-        "compassion": 10,
-        "ambition": -5
-      }
+      "effects": [
+        { "type": "stat", "target": "compassion", "value": 10 },
+        { "type": "stat", "target": "ambition", "value": -5 }
+      ]
     },
     {
       "text": "Secretly send him back to the Uchiha",

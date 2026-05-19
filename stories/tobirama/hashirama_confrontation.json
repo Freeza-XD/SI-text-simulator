@@ -1,0 +1,31 @@
+{
+  "text": "Hashirama finds you standing over Izuna's body.\n\nHis face is filled not with anger, but exhaustion.\n\n'This war will never end like this, brother.'",
+  "choices": [
+    {
+      "text": "Defend your actions",
+      "next_scene": "ending_duty",
+      "effects": {
+        "ambition": 10
+      }
+    },
+    {
+      "text": "Remain silent",
+      "next_scene": "ending_silence",
+      "effects": {
+        "intellect": 5
+      }
+    },
+    {
+      "text": "Confess your doubt (Requires compassion > 55)",
+      "next_scene": "ending_doubt",
+      "condition": {
+        "stat": "compassion",
+        "operator": ">",
+        "value": 55
+      },
+      "effects": {
+        "honor": 15
+      }
+    }
+  ]
+}

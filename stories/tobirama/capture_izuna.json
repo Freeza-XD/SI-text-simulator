@@ -1,0 +1,35 @@
+{
+  "text": "You restrain Izuna before he loses consciousness.\n\nA living Uchiha heir could force negotiations.\n\nOr ignite an even larger war.",
+  "choices": [
+    {
+      "text": "Use him to negotiate peace",
+      "next_scene": "negotiation",
+      "effects": {
+        "intellect": 20,
+        "honor": 10
+      }
+    },
+    {
+      "text": "Interrogate him for Uchiha secrets",
+      "next_scene": "interrogation",
+      "effects": {
+        "intellect": 15,
+        "ambition": 10,
+        "compassion": -15
+      }
+    },
+    {
+      "text": "Release him if he swears a peace oath (Requires honor > 65)",
+      "next_scene": "oath_binding",
+      "condition": {
+        "stat": "honor",
+        "operator": ">",
+        "value": 65
+      },
+      "effects": {
+        "honor": 20,
+        "intellect": 10
+      }
+    }
+  ]
+}

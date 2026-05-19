@@ -1,0 +1,12 @@
+{
+  "text": "Despite every instinct screaming otherwise, you sheathe your sword.\n\nYou kneel beside Izuna and save him, knowing full well the consequences.\n\nThe moment feels eternal.",
+  "choices": [
+    {
+      "text": "Continue",
+      "next_scene": "ending_ultimate_mercy",
+      "effects": {
+        "honor": 30
+      }
+    }
+  ]
+}

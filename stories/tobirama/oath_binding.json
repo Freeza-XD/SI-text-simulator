@@ -1,0 +1,12 @@
+{
+  "text": "Izuna swears a binding oath of peace on his honor and clan name.\n\nYou release him.\n\nBoth of you know this changes everything.",
+  "choices": [
+    {
+      "text": "Continue",
+      "next_scene": "ending_oath",
+      "effects": {
+        "honor": 20
+      }
+    }
+  ]
+}

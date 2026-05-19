@@ -1,0 +1,22 @@
+{
+  "text": "The Senju clan erupts into argument after seeing you save Izuna.\n\nSome call you naive.\n\nOthers wonder if peace was always possible.",
+  "choices": [
+    {
+      "text": "Show the Senju that saving Izuna was the right decision",
+      "next_scene": "ending_divided",
+      "condition": {
+        "flag": "izuna_saved"
+      },
+      "effects": {
+        "honor": 10
+      }
+    },
+    {
+      "text": "Continue",
+      "next_scene": "ending_divided",
+      "effects": {
+        "ambition": -10
+      }
+    }
+  ]
+}

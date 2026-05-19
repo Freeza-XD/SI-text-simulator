@@ -1,0 +1,12 @@
+{
+  "text": "You help Izuna to his feet and tell him:\n\n'Your fate should be yours to choose, not mine to decide.'\n\nHe stares at you in disbelief, then slowly walks away into the night.",
+  "choices": [
+    {
+      "text": "Continue",
+      "next_scene": "ending_free_will",
+      "effects": {
+        "honor": 25
+      }
+    }
+  ]
+}

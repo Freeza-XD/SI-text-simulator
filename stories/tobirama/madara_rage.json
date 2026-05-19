@@ -1,0 +1,24 @@
+{
+  "text": "Madara arrives moments later.\n\nThe moment he sees Izuna's lifeless body, his expression changes completely.\n\nThe battlefield trembles under the pressure of his chakra.\n\n'Tobirama...'\n\nHis Mangekyo Sharingan locks onto you.",
+  "choices": [
+    {
+      "text": "Prepare to fight",
+      "next_scene": "ending_war",
+      "effects": {
+        "strength": 20
+      }
+    },
+    {
+      "text": "Apologize and face his judgment (Requires honor > 60)",
+      "next_scene": "ending_redemption",
+      "condition": {
+        "stat": "honor",
+        "operator": ">",
+        "value": 60
+      },
+      "effects": {
+        "honor": -30
+      }
+    }
+  ]
+}

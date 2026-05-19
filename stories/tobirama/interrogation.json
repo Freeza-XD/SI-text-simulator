@@ -1,0 +1,12 @@
+{
+  "text": "Izuna refuses to betray his clan despite his condition.\n\nHis loyalty only deepens your distrust of the Uchiha.",
+  "choices": [
+    {
+      "text": "Continue",
+      "next_scene": "ending_paranoia",
+      "effects": {
+        "intellect": -5
+      }
+    }
+  ]
+}

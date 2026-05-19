@@ -1,0 +1,20 @@
+{
+  "text": "You drive your blade through Izuna's chest without hesitation.\n\nHis breathing stops.\n\nFor several seconds, the battlefield becomes unnaturally silent.\n\nFar away, Madara senses his brother's death.\n\nThe hatred in the air becomes suffocating.",
+  "choices": [
+    {
+      "text": "Face Madara directly",
+      "next_scene": "madara_rage",
+      "effects": {
+        "strength": 15,
+        "honor": -10
+      }
+    },
+    {
+      "text": "Return to Hashirama",
+      "next_scene": "hashirama_confrontation",
+      "effects": {
+        "intellect": 10
+      }
+    }
+  ]
+}

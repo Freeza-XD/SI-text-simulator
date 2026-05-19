@@ -1,0 +1,39 @@
+{
+  "text": "Against all logic, you kneel beside Izuna and begin emergency treatment.\n\nYour medical ninjutsu slows the bleeding.\n\nSeveral nearby Senju stare at you in complete shock.",
+  "choices": [
+    {
+      "text": "Take Izuna back for treatment",
+      "next_scene": "senju_conflict",
+      "flags": {
+        "set": [
+          "izuna_saved"
+        ]
+      },
+      "effects": {
+        "compassion": 10,
+        "ambition": -5
+      }
+    },
+    {
+      "text": "Secretly send him back to the Uchiha",
+      "next_scene": "hidden_deal",
+      "effects": {
+        "intellect": 15,
+        "ambition": 10
+      }
+    },
+    {
+      "text": "Let him decide his own fate (Requires compassion > 75)",
+      "next_scene": "free_choice",
+      "condition": {
+        "stat": "compassion",
+        "operator": ">",
+        "value": 75
+      },
+      "effects": {
+        "compassion": 15,
+        "honor": 15
+      }
+    }
+  ]
+}

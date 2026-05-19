@@ -1,0 +1,12 @@
+{
+  "text": "Izuna listens silently.\n\nFor the first time in years, an Uchiha and a Senju speak without immediately reaching for a weapon.\n\nSomewhere in the distance, the future itself shifts.",
+  "choices": [
+    {
+      "text": "Continue",
+      "next_scene": "ending_peace",
+      "effects": {
+        "honor": 15
+      }
+    }
+  ]
+}

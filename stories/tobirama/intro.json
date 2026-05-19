@@ -1,0 +1,56 @@
+{
+  "text": "The battlefield burns under the evening sky. Izuna Uchiha collapses before you, blood spreading across the dirt from the wound your blade inflicted. In the distance, the clash between Hashirama and Madara continues. For a brief moment, the war itself seems to pause.\n\nIzuna struggles to breathe as his Sharingan slowly fades in and out of focus.\n\nWhat will Tobirama Senju do?",
+  "choices": [
+    {
+      "text": "Finish Izuna immediately",
+      "next_scene": "kill_izuna",
+      "effects": {
+        "ambition": 20,
+        "compassion": -20,
+        "strength": 10
+      }
+    },
+    {
+      "text": "Spare Izuna and walk away",
+      "next_scene": "spare_izuna",
+      "effects": {
+        "compassion": 20,
+        "ambition": -10,
+        "honor": 10
+      }
+    },
+    {
+      "text": "Attempt to save Izuna",
+      "next_scene": "save_izuna",
+      "effects": {
+        "compassion": 30,
+        "ambition": -20,
+        "intellect": 20,
+        "strength": -10
+      }
+    },
+    {
+      "text": "Capture Izuna as a hostage",
+      "next_scene": "capture_izuna",
+      "effects": {
+        "intellect": 15,
+        "ambition": 15,
+        "compassion": -10
+      }
+    },
+    {
+      "text": "Show mercy and risk everything (Requires honor > 70)",
+      "next_scene": "ultimate_mercy",
+      "condition": {
+        "stat": "honor",
+        "operator": ">",
+        "value": 70
+      },
+      "effects": {
+        "compassion": 40,
+        "honor": 20,
+        "strength": -15
+      }
+    }
+  ]
+}

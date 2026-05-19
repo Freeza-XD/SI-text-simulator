@@ -1,0 +1,12 @@
+{
+  "text": "Izuna speaks of his brother, his clan, the weight of being born an Uchiha.\n\nYou realize, for perhaps the first time, that you are not so different.",
+  "choices": [
+    {
+      "text": "Continue",
+      "next_scene": "ending_understanding",
+      "effects": {
+        "compassion": 20
+      }
+    }
+  ]
+}

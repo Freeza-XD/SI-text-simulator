@@ -1,0 +1,13 @@
+{
+  "text": "Under the cover of darkness, Izuna is secretly returned to the Uchiha.\n\nOnly you and Izuna know the truth.\n\nFor now.",
+  "choices": [
+    {
+      "text": "Continue",
+      "next_scene": "ending_secret",
+      "effects": {
+        "intellect": 10,
+        "ambition": 5
+      }
+    }
+  ]
+}

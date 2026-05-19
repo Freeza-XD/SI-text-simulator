@@ -1,0 +1,13 @@
+{
+  "text": "Using Izuna as leverage, you force the first serious negotiations between the Senju and Uchiha clans.\n\nThe tension is unbearable.\n\nBut for the first time, peace becomes imaginable.",
+  "choices": [
+    {
+      "text": "Continue",
+      "next_scene": "ending_negotiation",
+      "effects": {
+        "intellect": 10,
+        "ambition": 5
+      }
+    }
+  ]
+}

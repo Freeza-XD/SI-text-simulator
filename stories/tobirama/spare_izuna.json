@@ -1,0 +1,33 @@
+{
+  "text": "You lower your weapon.\n\nIzuna stares at you in disbelief.\n\n'Why...?' he whispers.\n\nThe war has taught both clans to expect cruelty, not mercy.",
+  "choices": [
+    {
+      "text": "Tell him the cycle of hatred must end",
+      "next_scene": "peace_attempt",
+      "effects": {
+        "compassion": 15,
+        "intellect": 10
+      }
+    },
+    {
+      "text": "Warn him never to face you again",
+      "next_scene": "cold_mercy",
+      "effects": {
+        "strength": 10
+      }
+    },
+    {
+      "text": "Ask about his reasons for fighting (Requires intellect > 60)",
+      "next_scene": "understanding",
+      "condition": {
+        "stat": "intellect",
+        "operator": ">",
+        "value": 60
+      },
+      "effects": {
+        "intellect": 15,
+        "compassion": 10
+      }
+    }
+  ]
+}

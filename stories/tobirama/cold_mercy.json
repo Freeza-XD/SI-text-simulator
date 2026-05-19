@@ -1,0 +1,12 @@
+{
+  "text": "You leave Izuna alive, but your warning carries no warmth.\n\nEven so, the fact remains:\n\nTobirama Senju spared an Uchiha.",
+  "choices": [
+    {
+      "text": "Continue",
+      "next_scene": "ending_uncertain",
+      "effects": {
+        "strength": 5
+      }
+    }
+  ]
+}
